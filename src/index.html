@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Interativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="Calendário interativo moderno com suporte a temas claro/escuro e múltiplos idiomas">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <div id="datetime" class="datetime"></div>
+            <div class="controls">
+                <div id="themeMenuContainer" class="theme-menu-container">
+                    <button id="themeButton" class="btn theme-btn">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                    <div class="theme-menu">
+                        <button class="theme-option" data-theme="light">
+                            <i class="fas fa-sun"></i> Claro
+                        </button>
+                        <button class="theme-option" data-theme="dark">
+                            <i class="fas fa-moon"></i> Escuro
+                        </button>
+                        <button class="theme-option" data-theme="purple">
+                            <i class="fas fa-circle" style="color: #a855f7"></i> Roxo
+                        </button>
+                        <button class="theme-option" data-theme="green">
+                            <i class="fas fa-circle" style="color: #10b981"></i> Verde
+                        </button>
+                        <button class="theme-option" data-theme="pink">
+                            <i class="fas fa-circle" style="color: #ec4899"></i> Rosa
+                        </button>
+                        <button class="theme-option" data-theme="ocean">
+                            <i class="fas fa-circle" style="color: #0ea5e9"></i> Oceano
+                        </button>
+                    </div>
+                </div>
+                <button id="languageToggle" class="btn">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button id="viewToggle" class="btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </header>
+        
+        <div id="calendar" class="calendar"></div>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
